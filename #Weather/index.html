@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rubik&display=swap" rel="stylesheet">
+		<title>Weather</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">  
+		<meta charset="Content-type" content="text/html; charset = UTF-8">
+	</head>
+	<body>
+		<div class="container">
+			<div class="search">
+				<input type="text" class="search__bar" placeholder="Search">
+				<button onclick=GetInfo() class="search__button"><img src="./img/search.SVG" alt=""></button>
+				<svg class="pl" viewBox="0 0 200 200" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+					<defs>
+						<linearGradient id="pl-grad1" x1="1" y1="0.5" x2="0" y2="0.5">
+							<stop offset="0%" stop-color="#7EBCD0" />
+							<stop offset="100%" stop-color="#7EBCD0" />
+						</linearGradient>
+						<linearGradient id="pl-grad2" x1="0" y1="0" x2="0" y2="1">
+							<stop offset="0%" stop-color="#7EBCD0" />
+							<stop offset="100%" stop-color="#7EBCD0" />
+						</linearGradient>
+					</defs>
+					<circle class="pl__ring" cx="100" cy="100" r="82" fill="none" stroke="url(#pl-grad1)" stroke-width="36" stroke-dasharray="0 257 1 257" stroke-dashoffset="0.01" stroke-linecap="round" transform="rotate(-90,100,100)" />
+					<line class="pl__ball" stroke="url(#pl-grad2)" x1="100" y1="18" x2="100.01" y2="182" stroke-width="36" stroke-dasharray="1 165" stroke-linecap="round" />
+				</svg>
+			</div>
+
+			<div class="group1">
+				<div class="loc">Country, City</div>
+				<div class="temp">0°C</div>
+				<div class="type">Sunny</div>
+			</div>
+
+			<div class="group2">
+				<div class="humidity">Humidity: 0%</div>
+				<div class="wind">Wind Speed: 0 km/h</div>
+			</div>
+		</div>
+
+		<!-- ********************************************* -->
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
